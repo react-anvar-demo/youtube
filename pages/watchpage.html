@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is clone of youtube">
+    <title>You Tube</title>
+    <!-- Google Fonts Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <!-- Normalize CSS Link -->
+    <!-- Aos Js LInks-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/helper.css">
+    <!-- Website Main CSS Link -->
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<style>
+    /* Second Page */
+.center_videos{
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+}
+.current{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.sec_page_wrapper{
+    display: block;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.parent_div{
+    padding-top: 100px;
+    margin: 0 auto;
+}
+.this_video iframe{
+    border:none;
+    width: 65%;
+    height: 490px;
+    max-height: 490px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 1000px rgba(143, 171, 135, 0.295);
+}
+.videoTitle{
+    color: white;
+    font-size: 20px;
+}
+.channel_informations{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.info_left{
+    width: 100%;
+    align-items:center ;
+    display: flex;
+}
+.channel_{
+    cursor: pointer;
+    display: flex;
+}
+.channel_ img {
+    width: 50px;
+    border-radius: 100%;
+    height: 50px;
+    aspect-ratio: 1;
+    margin-right: 10px;
+}
+.channel_ h1{
+    font-size: 18px;
+    transform: translateY(-5px);
+    color: white;
+}
+.channel_ h1 svg {
+    margin-left: 5px;
+}
+.channel_ span{
+    display: block;
+    transform: translateY(-15px);
+    font-size: 12px;
+    color: rgb(171, 171, 171);
+}
+.channel_ div{
+    display: flex;
+    flex-direction: column;
+}
+.subscribe{
+    cursor: pointer;
+    padding:10px 15px;
+    margin-left: 10%;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 750;
+}
+</style>
+<body class="body">
+
+    <!-- Website Header Section -->
+    <header>
+        <nav class="main_nav">
+            <!-- Nav Left Section -->
+            <div class="nav_left">
+                <button class="burger_btn" title="burger menu button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="13" viewBox="0 0 18 13" fill="none">
+                        <path
+                            d="M17.25 1.50003H0.75V0.583359H17.25V1.50003ZM17.25 6.08336H0.75V7.00003H17.25V6.08336ZM17.25 11.5834H0.75V12.5H17.25V11.5834Z"
+                            fill="white" />
+                    </svg>
+                </button>
+                <a href="/index.html"><img class="logo" src="/images/youtube_logo.png" alt="" title="logo"></a>
+            </div>
+
+            <!-- Nav Left Section -->
+            <div class="nav_center">
+                <label>
+                    <input type="text" placeholder="Qidiruv">
+                    <button class="search_btn" title="Qidiruv">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <path
+                                d="M17.87 17.17L12.28 11.58C13.35 10.35 14 8.75 14 7C14 3.13 10.87 0 7 0C3.13 0 0 3.13 0 7C0 10.87 3.13 14 7 14C8.75 14 10.35 13.35 11.58 12.29L17.17 17.88L17.87 17.17ZM7 13C3.69 13 1 10.31 1 7C1 3.69 3.69 1 7 1C10.31 1 13 3.69 13 7C13 10.31 10.31 13 7 13Z"
+                                fill="white" />
+                        </svg>
+                    </button>
+
+                    <button class="voice_btn" title="Ovozli Qidiruv">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="18" viewBox="0 0 14 18" fill="none">
+                            <path
+                                d="M7 0C5.34 0 4 1.37 4 3.07V8.93C4 10.63 5.34 12 7 12C8.66 12 10 10.63 10 8.93V3.07C10 1.37 8.66 0 7 0ZM13.5 9H12.5C12.5 12.03 10.03 14.5 7 14.5C3.97 14.5 1.5 12.03 1.5 9H0.5C0.5 12.24 2.89 14.93 6 15.41V18H8V15.41C11.11 14.93 13.5 12.24 13.5 9Z"
+                                fill="white" />
+                        </svg>
+                    </button>
+                </label>
+            </div>
+
+            <!-- Nav Left Section -->
+            <div class="nav_right">
+                <button class="create" title="video yaratish">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14" fill="none">
+                        <path
+                            d="M12 8H9V11H7V8H4V6H7V3H9V6H12V8ZM15 1H1V13H15V6.61L19 8.44V3.56L15 5.39V1ZM16 0V3.83L20 2V10L16 8.17V14H0V0H16Z"
+                            fill="white" />
+                    </svg>
+                </button>
+                <button class="notifications" title="notificate">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="21" viewBox="0 0 16 21" fill="none">
+                        <path
+                            d="M6 19H10C10 20.1 9.1 21 8 21C6.9 21 6 20.1 6 19ZM16 16.35V18H0V16.35L2 14.47V9.32001C2 6.40001 3.56 4.10001 6 3.34001V2.96001C6 1.54001 7.49 0.460006 8.99 1.20001C9.64 1.52001 10 2.23001 10 2.96001V3.35001C12.44 4.10001 14 6.41001 14 9.33001V14.48L16 16.35ZM15 16.77L13 14.89V9.42001C13 6.95001 11.81 5.06001 9.87 4.32001C8.61 3.79001 7.23 3.82001 6.03 4.35001C4.15 5.11001 3 6.99001 3 9.42001V14.89L1 16.77V17H15V16.77Z"
+                            fill="white" />
+                    </svg>
+                </button>
+                <button class="profile" title="profile">
+                    <img src="https://avatars.githubusercontent.com/u/136093438?v=4" alt="">
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Website Main Section -->
+    <main class="parent_div">
+        <!-- This Video Place -->
+                
+        <div class="center_videos sec_page_wrapper">
+            <div class="current">
+                <div class="this_video">
+                    <iframe  src="https://www.youtube.com/embed/lOKASgtr6kU?si=Cky_WEohMzI2zML3" title="YouTube video player" allow="autoplay; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
+                </div>
+                <h1 class="videoTitle">I Adoped 100 Dogs!</h1>
+                <div class="channel_informations">
+                        <div class="info_left">
+                            <div class="channel_">
+                                <img src="https://yt3.ggpht.com/ytc/AIf8zZTM49hEx9zyui_0zDZKi75EgqJPJfuDmWu1cePdQQ=s88-c-k-c0x00ffffff-no-rj" alt="">
+                                <div>
+                                    <h1>MrBeast 
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11" viewBox="0 0 10 11" fill="none">
+                                        <path d="M5 0.5C2.25 0.5 0 2.75 0 5.5C0 8.25 2.25 10.5 5 10.5C7.75 10.5 10 8.25 10 5.5C10 2.75 7.75 0.5 5 0.5ZM3.9 8.15L1.8 6.1L2.5 5.4L3.9 6.75L7.5 3.2L8.2 3.9L3.9 8.15Z" fill="#AAAAAA"/>
+                                        </svg></h1>
+                                    <span>221 mln obunachi</span>
+                                </div>
+                            </div>
+                            <button class="subscribe">Obuna</button>
+                        </div>
+                </div>
+            </div>
+            <div class="other_videos"></div>
+        </div>
+    </main>
+
+    <!-- Website Footer Section -->
+    <footer></footer>
+
+</body>
+<!-- Main Js -->
+<script src="/js/main.js"></script>
+<!-- Ion_Icons Links -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</html>
